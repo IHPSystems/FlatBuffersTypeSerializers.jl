@@ -3,11 +3,14 @@ uuid = "c13d007d-c62b-4dc1-adbf-dd9e67a39354"
 authors = ["IHP Systems R&D <research@ihp.dk>"]
 version = "0.1.0"
 
-[compat]
-julia = "1"
-
 [deps]
 FlatBuffers = "53afe959-3a16-52fa-a8da-cf864710bae9"
+TypeSerializers = "66ceb7d2-8c8e-4075-97ca-ace8f0b9e750"
+
+[compat]
+FlatBuffers = "0.5.0"
+julia = "1"
+TypeSerializers = "0.1.0"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

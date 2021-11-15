@@ -3,6 +3,8 @@ module FlatBuffersTypeSerializers
 using FlatBuffers
 using TypeSerializers
 
+export FlatBuffersTypeSerializer, serialize, deserialize
+
 abstract type FlatBuffersTypeSerializer{T} <: AbstractTypeSerializer{T} end
 
 function serialize(::Type{TSerializer}, value::T)::IO where {T, TSerializer <: FlatBuffersTypeSerializer{T}}
